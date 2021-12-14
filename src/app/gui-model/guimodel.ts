@@ -307,9 +307,7 @@ export class GuiModel {
                             "color": "pumpkin",
                             "search": true,
                             "url": "/activity",
-                            "form": {
-                                "form": "AddActivityForm"
-                            }
+                            "page": "edit-activitiespage",
                         },
                             
                     ]
@@ -346,6 +344,42 @@ export class GuiModel {
                             "url": "/activity",
                             "form": {
                                 "form": "AddActivityForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "edit-activitiespage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditActivity",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddFriend",
+                            "icon": "fa-calendar-alt",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/friend",
+                            "form": {
+                                "form": "FriendForm"
                             }
                         },
                     ]
