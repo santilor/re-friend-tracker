@@ -33,7 +33,15 @@ export class GuiModel {
                             "name": "Nickname",
                             "width": 2,
                             "required": true
-                        },   
+                        },
+                        {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2
+                        },    
                         {
                             "id":   "location",
                             "type": "autocomplete",
@@ -55,7 +63,7 @@ export class GuiModel {
                             "width": 2,
                             "height": 4,
                             "maxLength": 5000,
-                        },
+                        }, 
                         {
                             "type": "deleteButton",
                             "name": "Delete"
@@ -251,7 +259,18 @@ export class GuiModel {
                             "form": {
                                 "form": "GroupForm"
                             }
-                        }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/group",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                            
                     ]
                 },
                    
