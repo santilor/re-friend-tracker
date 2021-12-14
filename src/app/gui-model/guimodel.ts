@@ -225,9 +225,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {
-                                "form": "FriendForm"
-                            }
+                            "page": "edit-friendspage",
                         },
                     ]
                 },
@@ -314,6 +312,42 @@ export class GuiModel {
                             }
                         },
                             
+                    ]
+                },
+                {
+                    "id": "edit-friendspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-calendar-alt",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-calendar-alt",
+                            "color": "pumpkin",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
                     ]
                 },
                    
